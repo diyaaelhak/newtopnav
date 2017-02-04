@@ -18,6 +18,7 @@
 
 .gn-menu-main,
 .gn-menu-main ul {
+	        position: absolute;
 		margin: 0;
 		padding: 0;
 		background: white;
@@ -30,7 +31,7 @@
 }
 
 .gn-menu-main {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -38,7 +39,7 @@
 		font-size: 13px;
 }
 
-.gn-menu-main a {
+.gn-menu-main {
 		display: block;
 		height: 100%;
 		color: #5f6f81;
@@ -94,7 +95,7 @@
 }
 
 .gn-menu-wrapper {
-		position: fixed;
+		position: absolute;
 		top: 60px;
 		bottom: 0;
 		left: 0;
