@@ -64,7 +64,7 @@
 /* icon-only trigger (menu item) */
 
 .gn-menu-main li.gn-trigger {
-		position: relative;
+		position: absolute;
 		width: 60px;
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -117,7 +117,8 @@
 		height: 100%;
 }
 
-.gn-menu {
+.gn-menu {      
+	        position: absolute;
 		border-bottom: 1px solid #c6d0da;
 		text-align: left;
 		font-size: 18px;
@@ -125,10 +126,12 @@
 
 .gn-menu li:not(:first-child),
 .gn-menu li li {
+	position: absolute;
 		box-shadow: inset 0 1px #c6d0da
 }
 
 .gn-submenu li {
+	position: absolute;
 		overflow: hidden;
 		height: 0;
 		-webkit-transition: height 0.3s;
@@ -137,10 +140,12 @@
 }
 
 .gn-submenu li a {
+	position: absolute;
 		color: #c1c9d1
 }
 
 input.gn-search {
+	position: absolute;
 		position: relative;
 		z-index: 10;
 		padding-left: 60px;
@@ -156,18 +161,22 @@ input.gn-search {
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
+	position: absolute;
 		color: #5f6f81
 }
 
 .gn-search:-moz-placeholder {
+	position: absolute;
 		color: #5f6f81
 }
 
 .gn-search::-moz-placeholder {
+	position: absolute;
 		color: #5f6f81
 }
 
 .gn-search:-ms-input-placeholder {
+	position: absolute;
 		color: #5f6f81
 }
 
@@ -179,28 +188,34 @@ input.gn-search {
 }
 
 input.gn-search:focus {
+	position: absolute;
 		cursor: text
 }
 
 .no-touch .gn-menu li.gn-search-item:hover input.gn-search {
+	position: absolute;
 		color: white
 }
 
 /* placeholder */
 
 .no-touch .gn-menu li.gn-search-item:hover .gn-search::-webkit-input-placeholder {
+	position: absolute;
 		color: white
 }
 
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:-moz-placeholder {
+	position: absolute;
 		color: white
 }
 
 .no-touch .gn-menu li.gn-search-item:hover .gn-search::-moz-placeholder {
+	position: absolute;
 		color: white
 }
 
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:-ms-input-placeholder {
+	position: absolute;
 		color: white
 }
 
@@ -212,6 +227,7 @@ input.gn-search:focus {
 }
 
 .gn-icon::before {
+	position: absolute;
 		display: inline-block;
 		width: 60px;
 		text-align: center;
@@ -226,52 +242,64 @@ input.gn-search:focus {
 }
 
 .gn-icon-help::before {
+	position: absolute;
 		content: "\e000"
 }
 
 .gn-icon-earth::before {
+	position: absolute;
 		content: "\e004"
 }
 
 .gn-icon-cog::before {
+	position: absolute;
 		content: "\e006"
 }
 
 .gn-icon-search::before {
+	position: absolute;
 		content: "\e005"
 }
 
 .gn-icon-download::before {
+	position: absolute;
 		content: "\e007"
 }
 
 .gn-icon-photoshop::before {
+	position: absolute;
 		content: "\e001"
 }
 
 .gn-icon-illustrator::before {
+	position: absolute;
 		content: "\e002"
 }
 
 .gn-icon-archive::before {
+	position: absolute;
 		content: "\e00d"
 }
 
 .gn-icon-article::before {
+	position: absolute;
 		content: "\e003"
 }
 
 .gn-icon-pictures::before {
+	position: absolute;
 		content: "\e008"
 }
 
 .gn-icon-videos::before {
+	position: absolute;
 		content: "\e009"
 }
 
 /* if an icon anchor has a span, hide the span */
 
 .gn-icon span {
+	position: absolute;
 		width: 0;
 		height: 0;
 		display: block;
@@ -279,6 +307,7 @@ input.gn-search:focus {
 }
 
 .gn-icon-menu::before {
+	position: absolute;
 		margin-left: -15px;
 		vertical-align: -2px;
 		width: 30px;
@@ -290,11 +319,13 @@ input.gn-search:focus {
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
+	position: absolute;
 		background: white;
 		box-shadow: 0 3px #5f6f81, 0 -6px white, 0 -9px #5f6f81, 0 -12px white;
 }
 
 .gn-icon-menu.gn-selected::before {
+	position: absolute;
 		background: #5993cd;
 		box-shadow: 0 3px white, 0 -6px #5993cd, 0 -9px white, 0 -12px #5993cd;
 }
@@ -303,21 +334,25 @@ input.gn-search:focus {
 
 .gn-menu-wrapper.gn-open-all,
 .gn-menu-wrapper.gn-open-part {
+	position: absolute;
 		-webkit-transform: translateX(0px);
 		-moz-transform: translateX(0px);
 		transform: translateX(0px);
 }
 
 .gn-menu-wrapper.gn-open-all {
+	position: absolute;
 		width: 340px
 }
 
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
+	position: absolute;
 		height: 60px
 }
 
 @media screen and (max-width: 422px) { 
 	.gn-menu-wrapper.gn-open-all {
+		position: absolute;
 			-webkit-transform: translateX(0px);
 			-moz-transform: translateX(0px);
 			transform: translateX(0px);
@@ -325,6 +360,7 @@ input.gn-search:focus {
 	}
 
 	.gn-menu-wrapper.gn-open-all .gn-scroller {
+		position: absolute;
 			width: 130%
 	}
 }
